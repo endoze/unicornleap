@@ -1,6 +1,14 @@
+//
+//  main.swift
+//  TrollLeap
+//
+//  Created by Endoze on 2/1/17.
+//  Copyright © 2017 Endoze. All rights reserved.
+//
+
 import Cocoa
 
-let command = UnicornCommand(CommandLine.arguments)
+let command = TrollCommand(CommandLine.arguments)
 
 if command.needsHelp {
   command.printUsage(0)
