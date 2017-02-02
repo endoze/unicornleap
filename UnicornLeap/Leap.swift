@@ -1,30 +1,30 @@
 import Cocoa
 
 class Leap {
-  let command: Command
+  let command: Commandable
 
-  class func animateImage(command: Command) {
+  class func animateImage(_ command: Commandable) {
     Leap(command).animateImage()
   }
 
-  init(_ command: Command) {
+  init(_ command: Commandable) {
     self.command = command
   }
 
   func animateImage() {
-    // I don't know what this does, but you need it
-    NSApplication.sharedApplication()
+    // Makes a connection to the window server so we can animate
+    NSApplication.shared()
 
-    guard let unicornImage = UnicornImage(filename: command.unicornFile!) else { printImageError(command.unicornFile!); return }
-    guard let sparkleImage = SparkleImage(filename: command.sparkleFile!) else { printImageError(command.sparkleFile!); return }
+    guard let unicornImage = UnicornImage(filename: command.imageFile!) else { command.printImageError(command.imageFile!); return }
+    guard let sparkleImage = SparkleImage(filename: command.sparkleFile!) else { command.printImageError(command.sparkleFile!); return }
 
-    let floatingWindow = FloatingWindow(rect: NSScreen.mainScreen()!.frame)
+    let floatingWindow = FloatingWindow(rect: NSScreen.main()!.frame)
 
     floatingWindow.window.makeKeyAndOrderFront(nil)
 
     let waitFor = Double(command.seconds!/2.5)
 
-    let runLoop = NSRunLoop.currentRunLoop()
+    let runLoop = RunLoop.current
     floatingWindow.view.wantsLayer = true
 
     for _ in (1...command.number!) {
@@ -36,9 +36,9 @@ class Leap {
       unicornImage.addAnimation(Double(command.seconds!))
       sparkleImage.addAnimation(Double(command.seconds!), path: unicornImage.path)
 
-      runLoop.runUntilDate(NSDate(timeIntervalSinceNow: Double(waitFor)))
+      runLoop.run(until: Date(timeIntervalSinceNow: Double(waitFor)))
     }
 
-    runLoop.runUntilDate(NSDate(timeIntervalSinceNow: (Double(command.seconds!) - waitFor + 0.2)))
+    runLoop.run(until: Date(timeIntervalSinceNow: (Double(command.seconds!) - waitFor + 0.2)))
   }
 }

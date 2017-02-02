@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC0351BA1C5FA16000341BB3 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351B91C5FA16000341BB3 /* Command.swift */; };
-		FC0351BB1C5FA16000341BB3 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351B91C5FA16000341BB3 /* Command.swift */; };
+		3724332A1E437C750034627A /* TrollCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DA27B1E42C39500DA2CA6 /* TrollCommand.swift */; };
+		3724332B1E437C890034627A /* Commandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABA8E61E42B40000E80A1F /* Commandable.swift */; };
+		374DA27C1E42C39500DA2CA6 /* TrollCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374DA27B1E42C39500DA2CA6 /* TrollCommand.swift */; };
+		374DA27D1E42C46600DA2CA6 /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B91D71C63932900BADED4 /* FloatingWindow.swift */; };
+		374DA27E1E42C46600DA2CA6 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351BE1C62414400341BB3 /* Leap.swift */; };
+		374DA27F1E42C46600DA2CA6 /* LeapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B91D91C63976900BADED4 /* LeapImage.swift */; };
+		374DA2801E42C46600DA2CA6 /* SparkleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC248CD1C654DDC00984E72 /* SparkleImage.swift */; };
+		374DA2811E42C48F00DA2CA6 /* UnicornImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC248D01C654E1D00984E72 /* UnicornImage.swift */; };
+		374DA2821E42C67100DA2CA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABA8CE1E42A1B000E80A1F /* Cocoa.framework */; };
+		37ABA8CF1E42A1B000E80A1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ABA8CE1E42A1B000E80A1F /* Cocoa.framework */; };
+		37ABA8E21E42B1C000E80A1F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABA8E11E42B1C000E80A1F /* main.swift */; };
+		37ABA8E71E42B40000E80A1F /* Commandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABA8E61E42B40000E80A1F /* Commandable.swift */; };
+		37ABA8E81E42B40000E80A1F /* Commandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABA8E61E42B40000E80A1F /* Commandable.swift */; };
+		FC0351BA1C5FA16000341BB3 /* UnicornCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351B91C5FA16000341BB3 /* UnicornCommand.swift */; };
+		FC0351BB1C5FA16000341BB3 /* UnicornCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351B91C5FA16000341BB3 /* UnicornCommand.swift */; };
 		FC0351BD1C60F05400341BB3 /* CommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351BC1C60F05400341BB3 /* CommandTests.swift */; };
 		FC0351BF1C62414400341BB3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351BE1C62414400341BB3 /* Leap.swift */; };
 		FC0351C01C62414400341BB3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0351BE1C62414400341BB3 /* Leap.swift */; };
@@ -16,7 +29,6 @@
 		FC0B91DA1C63976900BADED4 /* LeapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B91D91C63976900BADED4 /* LeapImage.swift */; };
 		FC0B91DE1C65345700BADED4 /* FloatingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B91D71C63932900BADED4 /* FloatingWindow.swift */; };
 		FC0B91DF1C65345D00BADED4 /* LeapImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0B91D91C63976900BADED4 /* LeapImage.swift */; };
-		FC44700F1C6558C200A7635E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4656D81C5D21710069EA6F /* main.swift */; };
 		FC4656D91C5D21710069EA6F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4656D81C5D21710069EA6F /* main.swift */; };
 		FCC248CE1C654DDC00984E72 /* SparkleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC248CD1C654DDC00984E72 /* SparkleImage.swift */; };
 		FCC248CF1C654DDC00984E72 /* SparkleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC248CD1C654DDC00984E72 /* SparkleImage.swift */; };
@@ -25,6 +37,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		37ABA8DD1E42B1C000E80A1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		FC4656D31C5D21710069EA6F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,20 +58,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		374DA27B1E42C39500DA2CA6 /* TrollCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrollCommand.swift; sourceTree = "<group>"; };
+		37ABA8CE1E42A1B000E80A1F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		37ABA8DF1E42B1C000E80A1F /* trollleap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trollleap; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ABA8E11E42B1C000E80A1F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		37ABA8E61E42B40000E80A1F /* Commandable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commandable.swift; sourceTree = "<group>"; };
 		FC0351B11C5D7B7F00341BB3 /* UnicornLeapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicornLeapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0351B51C5D7B7F00341BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC0351B91C5FA16000341BB3 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		FC0351B91C5FA16000341BB3 /* UnicornCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicornCommand.swift; sourceTree = "<group>"; };
 		FC0351BC1C60F05400341BB3 /* CommandTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTests.swift; sourceTree = "<group>"; };
 		FC0351BE1C62414400341BB3 /* Leap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leap.swift; sourceTree = "<group>"; };
 		FC0B91D71C63932900BADED4 /* FloatingWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingWindow.swift; sourceTree = "<group>"; };
 		FC0B91D91C63976900BADED4 /* LeapImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeapImage.swift; sourceTree = "<group>"; };
-		FC4656D51C5D21710069EA6F /* UnicornLeap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicornLeap; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4656D51C5D21710069EA6F /* unicornleap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = unicornleap; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4656D81C5D21710069EA6F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FCC248CD1C654DDC00984E72 /* SparkleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkleImage.swift; sourceTree = "<group>"; };
 		FCC248D01C654E1D00984E72 /* UnicornImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicornImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		37ABA8DC1E42B1C000E80A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374DA2821E42C67100DA2CA6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC0351AE1C5D7B7F00341BB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,12 +96,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ABA8CF1E42A1B000E80A1F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37ABA8CD1E42A1B000E80A1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37ABA8CE1E42A1B000E80A1F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37ABA8E01E42B1C000E80A1F /* TrollLeap */ = {
+			isa = PBXGroup;
+			children = (
+				37ABA8E11E42B1C000E80A1F /* main.swift */,
+				374DA27B1E42C39500DA2CA6 /* TrollCommand.swift */,
+			);
+			path = TrollLeap;
+			sourceTree = "<group>";
+		};
 		FC0351B21C5D7B7F00341BB3 /* UnicornLeapTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,15 +134,18 @@
 			children = (
 				FC4656D71C5D21710069EA6F /* UnicornLeap */,
 				FC0351B21C5D7B7F00341BB3 /* UnicornLeapTests */,
+				37ABA8E01E42B1C000E80A1F /* TrollLeap */,
 				FC4656D61C5D21710069EA6F /* Products */,
+				37ABA8CD1E42A1B000E80A1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FC4656D61C5D21710069EA6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC4656D51C5D21710069EA6F /* UnicornLeap */,
+				FC4656D51C5D21710069EA6F /* unicornleap */,
 				FC0351B11C5D7B7F00341BB3 /* UnicornLeapTests.xctest */,
+				37ABA8DF1E42B1C000E80A1F /* trollleap */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,13 +153,14 @@
 		FC4656D71C5D21710069EA6F /* UnicornLeap */ = {
 			isa = PBXGroup;
 			children = (
-				FC0351B91C5FA16000341BB3 /* Command.swift */,
+				FC0351B91C5FA16000341BB3 /* UnicornCommand.swift */,
 				FC0B91D71C63932900BADED4 /* FloatingWindow.swift */,
 				FC0351BE1C62414400341BB3 /* Leap.swift */,
 				FC0B91D91C63976900BADED4 /* LeapImage.swift */,
 				FC4656D81C5D21710069EA6F /* main.swift */,
 				FCC248CD1C654DDC00984E72 /* SparkleImage.swift */,
 				FCC248D01C654E1D00984E72 /* UnicornImage.swift */,
+				37ABA8E61E42B40000E80A1F /* Commandable.swift */,
 			);
 			path = UnicornLeap;
 			sourceTree = "<group>";
@@ -112,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		37ABA8DE1E42B1C000E80A1F /* TrollLeap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37ABA8E51E42B1C000E80A1F /* Build configuration list for PBXNativeTarget "TrollLeap" */;
+			buildPhases = (
+				37ABA8DB1E42B1C000E80A1F /* Sources */,
+				37ABA8DC1E42B1C000E80A1F /* Frameworks */,
+				37ABA8DD1E42B1C000E80A1F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrollLeap;
+			productName = TrollLeap;
+			productReference = 37ABA8DF1E42B1C000E80A1F /* trollleap */;
+			productType = "com.apple.product-type.tool";
+		};
 		FC0351B01C5D7B7F00341BB3 /* UnicornLeapTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC0351B61C5D7B7F00341BB3 /* Build configuration list for PBXNativeTarget "UnicornLeapTests" */;
@@ -143,7 +216,7 @@
 			);
 			name = UnicornLeap;
 			productName = unicornleap;
-			productReference = FC4656D51C5D21710069EA6F /* UnicornLeap */;
+			productReference = FC4656D51C5D21710069EA6F /* unicornleap */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -152,15 +225,20 @@
 		FC4656CD1C5D21710069EA6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jon Allured";
 				TargetAttributes = {
+					37ABA8DE1E42B1C000E80A1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					FC0351B01C5D7B7F00341BB3 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 					FC4656D41C5D21710069EA6F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -178,6 +256,7 @@
 			targets = (
 				FC4656D41C5D21710069EA6F /* UnicornLeap */,
 				FC0351B01C5D7B7F00341BB3 /* UnicornLeapTests */,
+				37ABA8DE1E42B1C000E80A1F /* TrollLeap */,
 			);
 		};
 /* End PBXProject section */
@@ -193,18 +272,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		37ABA8DB1E42B1C000E80A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374DA2811E42C48F00DA2CA6 /* UnicornImage.swift in Sources */,
+				374DA27D1E42C46600DA2CA6 /* FloatingWindow.swift in Sources */,
+				374DA27E1E42C46600DA2CA6 /* Leap.swift in Sources */,
+				374DA27F1E42C46600DA2CA6 /* LeapImage.swift in Sources */,
+				374DA2801E42C46600DA2CA6 /* SparkleImage.swift in Sources */,
+				374DA27C1E42C39500DA2CA6 /* TrollCommand.swift in Sources */,
+				37ABA8E21E42B1C000E80A1F /* main.swift in Sources */,
+				37ABA8E81E42B40000E80A1F /* Commandable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FC0351AD1C5D7B7F00341BB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3724332B1E437C890034627A /* Commandable.swift in Sources */,
+				3724332A1E437C750034627A /* TrollCommand.swift in Sources */,
 				FC0351C01C62414400341BB3 /* Leap.swift in Sources */,
 				FCC248D21C654E1D00984E72 /* UnicornImage.swift in Sources */,
-				FC44700F1C6558C200A7635E /* main.swift in Sources */,
 				FC0351BD1C60F05400341BB3 /* CommandTests.swift in Sources */,
 				FCC248CF1C654DDC00984E72 /* SparkleImage.swift in Sources */,
 				FC0B91DE1C65345700BADED4 /* FloatingWindow.swift in Sources */,
 				FC0B91DF1C65345D00BADED4 /* LeapImage.swift in Sources */,
-				FC0351BB1C5FA16000341BB3 /* Command.swift in Sources */,
+				FC0351BB1C5FA16000341BB3 /* UnicornCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,13 +313,36 @@
 				FCC248CE1C654DDC00984E72 /* SparkleImage.swift in Sources */,
 				FC0B91D81C63932900BADED4 /* FloatingWindow.swift in Sources */,
 				FC0B91DA1C63976900BADED4 /* LeapImage.swift in Sources */,
-				FC0351BA1C5FA16000341BB3 /* Command.swift in Sources */,
+				FC0351BA1C5FA16000341BB3 /* UnicornCommand.swift in Sources */,
+				37ABA8E71E42B40000E80A1F /* Commandable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		37ABA8E31E42B1C000E80A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = trollleap;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		37ABA8E41E42B1C000E80A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = trollleap;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		FC0351B71C5D7B7F00341BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -260,8 +379,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -283,11 +404,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -295,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_MEMORY_MANAGEMENT = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -304,8 +427,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -321,29 +446,44 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		FC4656DD1C5D21710069EA6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = unicornleap;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		FC4656DE1C5D21710069EA6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = unicornleap;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37ABA8E51E42B1C000E80A1F /* Build configuration list for PBXNativeTarget "TrollLeap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37ABA8E31E42B1C000E80A1F /* Debug */,
+				37ABA8E41E42B1C000E80A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FC0351B61C5D7B7F00341BB3 /* Build configuration list for PBXNativeTarget "UnicornLeapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
